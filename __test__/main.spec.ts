@@ -57,4 +57,27 @@ describe('circle divider', () => {
         ]
       );
   });
+
+  test('offset -90 and 2 is -180 to -1, 0 to 179', () => {
+    expect(circleDivider({ divideCount: 2, offset: -90 }))
+      .toEqual(
+        [
+          { min: -180, max:  -1, index: 1 },
+          { min:    0, max: 179, index: 2 }
+        ]
+      );
+  });
+
+  test('offset -90 and 4 is -135 to -46, -45 to 44, 45 to 134, 135 to 179 and -180 to -136', () => {
+    expect(circleDivider({ divideCount: 4, offset: -90 }))
+      .toEqual(
+        [
+          { min: -135, max:  -46, index: 1 },
+          { min:  -45, max:   44, index: 2 },
+          { min:   45, max:  134, index: 3 },
+          { min:  135, max:  179, index: 4 },
+          { min: -180, max: -136, index: 4 }
+        ]
+      );
+  });
 });

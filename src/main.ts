@@ -4,7 +4,7 @@ export function circleDivider ({ divideCount = 1, offset = 0 }: Arg): Result[] {
   const res = [];
 
   [...Array(divideCount)].forEach((_: Object, i: number) => {
-    const min = i * scale - scale / 2;
+    const min = i * scale - scale / 2 + offset;
     const max = i * scale + scale / 2 - 1 + offset;
 
     if (min < 180 && max <= 179) {
