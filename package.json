@@ -1,8 +1,8 @@
 {
   "name": "circle-divider",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "split 360 degrees",
-  "main": "build/main.js",
+  "main": "build/src/main.js",
   "files": [
     "build",
     "src"
@@ -36,7 +36,11 @@
     "type": "git",
     "url": "git+https://github.com/tomatoaiu/circle-divider.git"
   },
-  "keywords": ["circle", "divider", "degree"],
+  "keywords": [
+    "circle",
+    "divider",
+    "degree"
+  ],
   "author": "",
   "license": "MIT",
   "bugs": {
