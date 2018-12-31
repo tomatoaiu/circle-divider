@@ -1,5 +1,7 @@
 # Circle-Divider
 
+[![current npm version](https://img.shields.io/npm/v/circle-divider.svg)](https://www.npmjs.com/package/circle-divider)
+
 ## Usage
 ```js
 import { circleDivider } from 'circle-divider'
